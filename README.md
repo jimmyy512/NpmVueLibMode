@@ -1,5 +1,5 @@
 # 開發Vue庫模塊架構 基於VueCli 3.x
-### 使用此套劍
+### 安裝使用此套件
 ```
 npm install git+https://github.com/jimmyy512/NpmVueLibMode.git  
 
