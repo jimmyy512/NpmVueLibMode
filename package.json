@@ -1,0 +1,26 @@
+{
+  "name": "vue_lib_template",
+  "version": "0.1.0",
+  "private": false,
+  "description": "基于 Vue 的颜色选择器",
+  "main": "lib/vue_lib_template.umd.min.js",
+  "keyword": "vue_lib_template colorpicker color-picker",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name vue_lib_template --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
