@@ -1,29 +1,19 @@
-# vue_lib_template
+# 開發Vue庫模塊架構 基於VueCli 3.x
+### 使用此套劍
+```
+npm install git+https://github.com/jimmyy512/NpmVueLibMode.git  
 
-## Project setup
-```
-npm install
-```
+//main.js
+import testShow from "vue_lib_template"
+Vue.use(testShow)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+//in html
+<test-show></test-show>
 ```
 
-### Run your tests
+## 開發模式
 ```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+npm install  
+npm run serve  
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
