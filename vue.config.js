@@ -4,6 +4,7 @@ function resolve (dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
+  publicPath: "./",
   // 修改 src 为 examples
   pages: {
     index: {
