@@ -13,7 +13,9 @@ module.exports = {
       filename: 'index.html'
     }
   },
-   // 扩展 webpack 配置，使 packages 加入编译
+  // 强制内联CSS
+  css: { extract: false },
+  // 扩展 webpack 配置，使 packages 加入编译
   chainWebpack: config => {
     config.resolve.alias
       .set('@',resolve('examples'))
@@ -26,8 +28,12 @@ module.exports = {
       .use('babel')
         .loader('babel-loader')
         .tap(options => {
-          // 修改它的选项...
           return options
         })
+    config.module
+      .rule("images")
+      .use("url-loader")
+      .loader("url-loader")
+      .tap(options => Object.assign(options, { limit: Infinity }));
   }
 }
